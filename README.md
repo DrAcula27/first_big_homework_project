@@ -1,13 +1,13 @@
 # first_big_homework_project
 
-<h1></h1>
+<h1>Per Scholas - Week2 - JS&CSS Concepts - Assignment: Arrays, Objects, Functions</h1>
 <p>Below are the requirements I followed to complete this assignment. It involved manipulating an array of objects using functions.</p>
 <ol>
     <li>Use the command line to make a new folder called first_big_homework_project.</li>
     <li>Use the command line to create index.html, index.css, and index.js.</li>
     <li>Create a git repository in this folder and connect it to a new Github repo (make commits as you go).</li>
     <li>Use the “code” keyword to open the js file in VS code.</li>
-    <li>Go to https://jsonplaceholder.typicode.com/users Links to an external site.and copy the array of 10 user objects.</li>
+    <li>Go to https://jsonplaceholder.typicode.com/users and copy the array of 10 user objects.</li>
     <li>Create a new variable called “users” and set it equal to the copied array.</li>
     <li>We no longer want to be responsible for the users’ phone numbers. Please create a function that will loop through the array and set the phone numbers = null. Call the function.</li>
     <li>Make a function called getUserInfo that returns the user object found using the email passed as a parameter.</li>
