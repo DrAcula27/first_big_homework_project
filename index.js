@@ -271,3 +271,14 @@ getUserInfo("Sherwood@rosamond.me");
         });
     }
     assignMonthlyPoints(userMonthlyPoints);
+
+// Make a variable months and set it equal to a number.
+let months = 4;
+
+// Make a function that For every month, add points to the users’ account.
+const addMonthlyPoints = months => {
+    users.forEach(user => {
+        user.monthlyPoints = user.monthlyPoints * months;
+    });
+}
+addMonthlyPoints(months);
