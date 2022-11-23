@@ -244,4 +244,17 @@ setPhoneToNull();
 const getUserInfo = email => {
     return users.find(user => user.email === email);
 }
-let chosenUser = getUserInfo("Sherwood@rosamond.me");
+getUserInfo("Sherwood@rosamond.me");
+
+// Kurtis Weissnat (Telly.Hoeger@billy.biz) just submitted a request to change his username to “Eren Yeager”.
+    // Make a function that takes 2 parameters “email” and “newUsername”.
+    const changeUsername = (email, newUsername) => {
+        // change the username of the user with that email.
+        users.forEach(user => {
+            if (user.email == email) {
+                user.username = newUsername;
+            }
+        });
+    }
+    // Pass your arguments changeUsername("Telly.Hoeger@billy.biz", “Eren Yeager”).
+    changeUsername("Telly.Hoeger@billy.biz", "Eren Yeager");
