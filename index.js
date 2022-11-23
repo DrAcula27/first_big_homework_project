@@ -239,3 +239,9 @@ const setPhoneToNull = () => {
     });
 }
 setPhoneToNull();
+
+// Make a function called getUserInfo that returns the user object found using the email passed as a parameter.
+const getUserInfo = email => {
+    return users.find(user => user.email === email);
+}
+let chosenUser = getUserInfo("Sherwood@rosamond.me");
