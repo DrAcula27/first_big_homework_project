@@ -290,3 +290,15 @@ const addTenPercent = () => {
     });
 }
 addTenPercent();
+
+// The user with email Chaim_McDermott@dana.io has submitted a request to delete her account. Make a function that will remove her from the array (taking the email as a parameter).
+const removeUser = email => {
+    users.forEach(user => {
+        if (email == user.email) {
+            users.splice(user, 1);
+        }
+    });
+}
+removeUser("Chaim_McDermott@dana.io");
+
+// console.log(users);
