@@ -286,7 +286,7 @@ addMonthlyPoints(months);
 // This month is special! We are going to add an additional 10% to everyone’s point totals! Create a function to do this.
 const addTenPercent = () => {
     users.forEach(user => {
-        user.monthlyPoints = user.monthlyPoints * 1.1;
+        user.monthlyPoints = Math.round(user.monthlyPoints * 1.1);
     });
 }
 addTenPercent();
