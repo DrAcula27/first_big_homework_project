@@ -258,3 +258,16 @@ getUserInfo("Sherwood@rosamond.me");
     }
     // Pass your arguments changeUsername("Telly.Hoeger@billy.biz", “Eren Yeager”).
     changeUsername("Telly.Hoeger@billy.biz", "Eren Yeager");
+
+// We have a list of how many points each user gets each month based on their subscription: [50, 20, 40, 33, 60, 20, 90, 110, 15, 30].
+    // The array is ordered so that arr[0] ‘50’ is for the first user, etc.
+    let userMonthlyPoints = [50, 20, 40, 33, 60, 20, 90, 110, 15, 30];
+    // Make a function that will Iterate through this array, grab the data, and create new properties on the objects called monthlyPoints and set it equal to the data.
+    const assignMonthlyPoints = userMonthlyPoints => {
+        let index = 0;
+        users.forEach(user => {
+            user.monthlyPoints = userMonthlyPoints[index];
+            index++;
+        });
+    }
+    assignMonthlyPoints(userMonthlyPoints);
